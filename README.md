@@ -1,7 +1,6 @@
-# Image2Text-AI
 ---
 title: Image2Text
-emoji: 😊
+emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
