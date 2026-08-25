@@ -1,6 +1,6 @@
 ---
-title: Image2Text
-emoji: 🚀
+title: ImageText
+emoji: 😊
 colorFrom: red
 colorTo: red
 sdk: docker
@@ -8,7 +8,7 @@ app_port: 8501
 tags:
 - streamlit
 pinned: false
-short_description: Image2TextAI
+short_description: ImageText
 ---
 # Image2Text-AI
 
