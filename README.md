@@ -15,7 +15,7 @@ short_description: ImageText
 A lightweight and user-friendly OCR (Optical Character Recognition) application built with Python, Streamlit, and Docker. The application allows users to upload images containing text and automatically extract the text into an editable format.
 The project demonstrates how computer vision, OCR, and containerization can be combined to build and deploy a practical document-processing application.
 
-Features
+**Features**
 •	📤 Upload image files through a Streamlit web interface
 
 •	🔍 Extract text from images using OCR
@@ -35,7 +35,7 @@ Features
 •	📊 Suitable for documents, screenshots, scanned pages, receipts, and other text-based images
 
 
-Technology	  Purpose
+**Technology**	  **Purpose**
 
 Python	        Application development
 
@@ -50,34 +50,37 @@ Docker	        Application containerization
 Git/GitHub	    Version control and source management
 
 
-Project Structure
+## 📁 Project Structure
 
+```text
 ocr-to-text/
-
 │
-├── app.py
-
-├── requirements.txt
-
-├── Dockerfile
-
-├── .dockerignore
-
-
-├── .gitignore
-
-├── README.md
+├── app.py                    # Main OCR application
+├── requirements.txt          # Python dependencies
+├── Dockerfile                # Docker configuration
+├── .dockerignore             # Docker build exclusions
+├── .gitignore                # Git exclusions
+├── README.md                 # Project documentation
 │
-
 ├── images/
-│   └── sample.png
+│   └── sample.png            # Sample image for OCR testing
 │
-
 └── tests/
-    └── test_ocr.py
+    └── test_ocr.py           # OCR unit tests
+```
+
+    ## 🔄 Completed Workflow
+
+```mermaid
+flowchart LR
+    A[🖼️ Upload Image] --> B[🔍 OCR Processing]
+    B --> C[📝 Extract Text]
+    C --> D[📋 Display Extracted Text]
+    D --> E[💾 Save / Use Text]
+```
 
 
-The application can be used for:
+**The application can be used for:**
 
 Scanned documents
 
@@ -97,9 +100,9 @@ Printed text
 
 containing structured or unstructured text
 
-Future Enhancements
+**Future Enhancements**
 
-Potential improvements include:
+**Potential improvements include:**
 
 Support for PDF documents
 
