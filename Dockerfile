@@ -11,6 +11,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY streamlit_app.py .
+# Copy Streamlit configuration
+COPY .streamlit .streamlit
 
 EXPOSE 7860
 
