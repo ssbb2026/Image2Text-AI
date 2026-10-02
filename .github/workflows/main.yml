@@ -12,17 +12,18 @@ jobs:
 
     steps:
       - name: Checkout repository
-        - uses: actions/checkout@v4
-          with:
-            fetch-depth: 0
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
 
       - name: Push to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "github-actions"
-
-          git remote add huggingface https://ssbb2026:${HF_TOKEN}@huggingface.co/spaces/ssbb2026/ImageText
-
+          git remote add huggingface "https://ssbb2026:${HF_TOKEN}@huggingface.co/spaces/ssbb2026/ImageText"
           git push huggingface HEAD:main --force
