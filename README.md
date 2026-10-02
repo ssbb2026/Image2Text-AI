@@ -10,108 +10,37 @@ tags:
 pinned: false
 short_description: Streamlit template space
 ---
-# Image2Text-AI
 
-A lightweight and user-friendly OCR (Optical Character Recognition) application built with Python, Streamlit, and Docker. The application allows users to upload images containing text and automatically extract the text into an editable format.
-The project demonstrates how computer vision, OCR, and containerization can be combined to build and deploy a practical document-processing application.
+# 📝 AI Image-to-Text Converter
 
-**Features**
-•	📤 Upload image files through a Streamlit web interface
+An interactive AI Image-to-Text Converter built with Python, Streamlit, and Tesseract OCR.
 
-•	🔍 Extract text from images using OCR
+Upload an image, crop and enhance it, configure OCR settings, extract text, view OCR confidence, and download the results.
 
-•	📝 Display extracted text in an editable text area
+## 🚀 Live Demo
 
-•	📋 Easily copy or download extracted text
+👉 **👉 Try the AI Image-to-Text Converter**
 
-•	🖼️ Preview uploaded images
+Hugging Face Space:
+https://huggingface.co/spaces/ssbb2026/ImagetoText
 
-•	🐳 Fully containerized using Docker
+The application is deployed using **Docker on Hugging Face Spaces**.
 
-•	⚡ Simple and lightweight Streamlit interface
+### Features
 
-•	🔧 Easy to run locally or inside a Docker container
+* 📤 Upload PNG, JPG, JPEG, WEBP, BMP, and TIFF images
+* ✂️ Crop images
+* 🔄 Rotate images
+* 🖤 Convert images to grayscale
+* 🎚️ Adjust contrast
+* ✨ Adjust sharpness
+* ⚫ Apply black-and-white thresholding
+* 🔍 Configure Tesseract OCR Page Segmentation Mode
+* 📄 Extract text
+* 📈 View OCR confidence
+* 📊 View word-level OCR details
+* 💾 Download extracted text as TXT
+* 📥 Download OCR details as CSV
 
-•	📊 Suitable for documents, screenshots, scanned pages, receipts, and other text-based images
-
-
-**Technology**	  **Purpose**
-
-Python	        Application development
-
-Streamlit	      Web application interface
-
-OCR Engine	    Text extraction from images
-
-Pillow      	  Image processing
-
-Docker	        Application containerization
-
-Git/GitHub	    Version control and source management
-
-
-## 📁 Project Structure
-
-```text
-ocr-to-text/
-│
-├── app.py                    # Main OCR application
-├── requirements.txt          # Python dependencies
-├── Dockerfile                # Docker configuration
-├── .dockerignore             # Docker build exclusions
-├── .gitignore                # Git exclusions
-├── README.md                 # Project documentation
-│
-├── images/
-│   └── sample.png            # Sample image for OCR testing
-│
-└── tests/
-    └── test_ocr.py           # OCR unit tests
-```
-
-    ## 🔄 Completed Workflow
-
-```mermaid
-flowchart LR
-    A[🖼️ Upload Image] --> B[🔍 OCR Processing]
-    B --> C[📝 Extract Text]
-    C --> D[📋 Display Extracted Text]
-    D --> E[💾 Save / Use Text]
-```
-
-
-**The application can be used for:**
-
-Scanned documents
-
-Screenshots
-
-Receipts
-
-Invoices
-
-Forms
-
-Notes
-
-Business documents
-
-Printed text
-
-containing structured or unstructured text
-
-**Future Enhancements**
-
-**Potential improvements include:**
-
-Support for PDF documents
-
-Multi-page document OCR
-
-Batch image processing
-
-Table extraction
-
-OCR confidence scoring
-
-Searchable PDF generation
+**Live Application:**
+https://huggingface.co/spaces/ssbb2026/ImageText
